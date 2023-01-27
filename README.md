@@ -13,9 +13,7 @@ We have written a small report where you can find more details about our specifi
 1.	Make sure you have the Bouncy Castle :european_castle: crypto provider installed in your machine (we have adopted the 1.72 version).
 2.  Modify the last line of the Makefile replacing our linux path with that of the machine which is going to run the project.
 3.  Compile the entire structure using the edited Makefile.
-4.  Run the KeyGeneration file.
-
-	Two files PrivateKey.key and PublicKey.key :key: will be genrated and they will respectively contain the parameters to retrive the private key and the public key. Store the PrivateKey.key file in the machine which is going to run the Server, while share the PubliceKey.key file with each user that is going to run the Client. In both cases the files must remain or be placed in the project's folder.
+4.  Run the KeyGeneration file.	Two files PrivateKey.key and PublicKey.key :key: will be genrated and they will respectively contain the parameters to retrive the private key and the public key. Store the PrivateKey.key file in the machine which is going to run the Server, while share the PubliceKey.key file with each user that is going to run the Client. In both cases the files must remain or be placed in the project's folder.
 5.	Make compilable the RunServer and RunClientApplication files :nerd_face: by
 
  	chmod +x RunServer
