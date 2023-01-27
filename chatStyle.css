@@ -1,0 +1,269 @@
+/*      STYLES FOR THE CHAT STAGE   */
+root { 
+    display: block;
+}
+
+.root {
+    -fx-background-image: url("chatBackground.png");
+    -fx-background-origin: border-box;
+    -fx-background-position: center;
+}
+
+/***************** TITLE *****************/
+
+#chatTitle{
+    -fx-font-weight: bold;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 40px;
+}
+
+#titleLabel{
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e8f4e6;
+    -fx-background-color: #58bc64;
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 15 15 15;
+    -fx-font-family: "Helvetica";
+    -fx-border-color: #e8f4e6;
+    -fx-border-style: solid;  
+    -fx-border-width: 5;  
+    -fx-border-insets: 0,1,4,5;
+    -fx-border-radius: 9,8,5,4;
+}
+
+/***************** MESSAGE INPUT TEXT AREA *****************/
+
+
+.text-area {
+    -fx-pref-height: 71;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 20px;
+	-fx-text-box-border: #686868;
+	-fx-focus-color: #686868;
+	-fx-background-color: #e8f4e6;
+	-fx-background-insets: 0,1,4,5;
+	-fx-background-radius: 9,8,5,4;
+}
+
+
+/***************** CHAT VISUALIZATION *****************/
+
+.scroll-pane{
+    -fx-background:#e8f4e6;
+}
+
+#sentMessage {
+    -fx-font-size: 20px;
+    -fx-font-weight: 400;
+}
+#sentMessage .content {
+    -fx-background-color:     
+    linear-gradient(#67e076 0%, #58bc64 100%),
+    linear-gradient(#67e076 0%, #58bc64 50%, #58bc64 51%, #58bc64 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 5 5 5 5;
+    -fx-font-family: "Helvetica";
+    -fx-max-width: 500;
+}	
+
+
+#receivedMessage {
+  -fx-font-size: 20px;
+    -fx-font-weight: 400;
+}
+#receivedMessage .content {
+    -fx-background-color:     
+    linear-gradient(#fae384 0%, #f4ac5a 100%),
+    linear-gradient(#fae384 0%, #f4ac5a 50%, #f4ac5a 51%, #f4ac5a 100%);
+    
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 5 5 5 5;
+    -fx-font-family: "Helvetica";
+    -fx-max-width: 500;
+}	
+
+
+#newUser {
+  -fx-font-size: 20px;
+    -fx-font-weight: 400;
+}
+#newUser .content {
+    -fx-background-color:     
+    linear-gradient(#45c9ed 0%, #459ced 100%),
+    linear-gradient(#45c9ed 0%, #459ced 50%, #459ced 51%, #459ced 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 5 5 5 5;
+    -fx-font-family: "Helvetica";
+    -fx-max-width: 500;
+}	
+
+
+#oldUser {
+  -fx-font-size: 20px;
+    -fx-font-weight: 400;
+}
+#oldUser .content {
+    -fx-background-color:     
+    linear-gradient(#45c9ed40 0%, #459ced40 100%),
+    linear-gradient(#45c9ed40 0%, #459ced40 50%, #459ced40 51%, #459ced40 100%);
+    
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 5 5 5 5;
+    -fx-font-family: "Helvetica";
+    -fx-max-width: 500;
+}	
+
+#sentLabel{
+    -fx-font-size: 20px;
+    -fx-text-fill: #58bc64;
+    -fx-padding: 0 5 0 5;
+    -fx-font-family: "Helvetica"; 
+    -fx-max-width: 500;
+    -fx-font-weight: bold;
+}
+
+#receivedLabel{
+    -fx-font-size: 20px;
+    -fx-text-fill: #f4ac5a;
+    -fx-padding: 0 5 0 5;
+    -fx-font-family: "Helvetica"; 
+    -fx-max-width: 500;
+    -fx-font-weight: bold;
+}
+
+
+/***************** CHAT BUTTONS AND RIGHT CONTROLS*****************/
+
+
+#chatId{
+    -fx-font-weight: bold;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 20px;
+}
+
+#chatLabel{
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #58bc64;/*#e8f4e6;*/
+    -fx-background-color: #282424;
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 15 15 15;
+    -fx-font-family: "Helvetica";
+    -fx-border-color: #e8f4e6;
+    -fx-border-style: solid;  
+    -fx-border-width: 4;  
+    -fx-border-insets: 0,1,4,5;
+    -fx-border-radius: 9,8,5,4;
+}
+
+#quitbutton {
+    -fx-background-color: 
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+            linear-gradient(#ff5252 0%, #ff0000 20%, #de1818 80%, #f24949 100%),
+            linear-gradient(#ff5252 0%, #ff0000 50%, #de1818 51%, #f24949 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 10 15 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+#quitbutton Text {
+    -fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+#quitbutton:hover {
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#ff5252 0%, #ff0000 20%, #de1818 80%, #f24949 100%),
+        linear-gradient(#ff5252 0%, #ff0000 50%, #de1818 51%, #f24949 100%);
+}
+
+#noNews {/*button without yellow shadow*/
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 10 15 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+#noNews Text {
+    -fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+#noNews:hover {
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+}
+
+#news {/*button with yellow shadow*/
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 10 15 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(three-pass-box, #f4ac5a, 70, 0, 0, 0);
+}
+#news Text {
+    -fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+#news:hover {
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-effect: dropshadow(three-pass-box, #f4ac5a, 70, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 10 15 10;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+}
+
+
+
+

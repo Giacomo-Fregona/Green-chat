@@ -1,0 +1,59 @@
+/*      STYLES FOR THE PARTICIPANT STAGE   */
+
+root { 
+    display: block;
+}
+
+.root {
+    -fx-background-image: url("participantsBackground.png");
+    -fx-background-origin: border-box;
+    -fx-background-position: center;
+}
+
+.text-field {
+	-fx-text-box-border: #686868;
+	-fx-focus-color: #686868;
+	-fx-background-color: #e8f4e6;
+	-fx-background-insets: 0,1,4,5;
+	-fx-background-radius: 9,8,5,4;
+}
+
+/*Labels denoting private chats without news*/
+#noMessages {
+    -fx-font-size: 40px;
+    -fx-text-fill: #e8f4e6;
+    -fx-background-color: #58bc64;
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 30 30 30 30;
+    -fx-font-family: "Helvetica";
+    -fx-border-color: #e8f4e6;
+    -fx-border-style: solid;  
+    -fx-border-width: 3;  
+    -fx-border-insets: 0,1,4,5;
+    -fx-border-radius: 9,8,5,4;
+    -fx-max-width: 260;
+}
+
+/*Labels denoting private chats with news. Same style of #noMessages except for a yellow shadow*/
+#newMessages {
+    -fx-font-size: 40px;
+    -fx-text-fill: #e8f4e6;
+    -fx-background-color: #58bc64;
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 30 30 30 30;
+    -fx-font-family: "Helvetica";
+    -fx-border-color: #e8f4e6;
+    -fx-border-style: solid;  
+    -fx-border-width: 3;  
+    -fx-border-insets: 0,1,4,5;
+    -fx-border-radius: 9,8,5,4;
+    -fx-max-width: 260;
+    -fx-effect: dropshadow(three-pass-box, #f4ac5a, 70, 0, 0, 0);
+}
+
+
+
+
+
