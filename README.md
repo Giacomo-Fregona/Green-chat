@@ -3,7 +3,7 @@ Hi! We are [Valentina Astore](https://github.com/Valentina-Astore) :tipping_hand
 
 ## What is Green Chat? :green_circle:
 
-It is a simple chat application based on a client-server architecture for group or private communication. The focus of our work is on the confidentiality of the exchanged messages, that are secured using modern cryptographic primitives :closed_lock_with_key: (CRYSTALS-Kyber, AES). We have also designed a simple and greenish JavaFX interface, we hope you can find it nice looking :wink:.
+It is a simple chat application based on a client-server architecture for group and private communication. The focus of our work is on the confidentiality of the exchanged messages, that are secured using modern cryptographic primitives :closed_lock_with_key: (CRYSTALS-Kyber, AES). We have also designed a simple and greenish JavaFX interface, we hope you can find it nice looking :wink:.
 
 We have written a small [report](https://github.com/Giacomo-Fregona/Green-chat/blob/main/Report.pdf) containing more details about our specifications, in particular regarding security issues and our simple network protocols.
 
